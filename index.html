@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andres Rojas — Software Engineer & Photographer</title>
+    <meta name="description" content="Andres Rojas is a Software Engineer and Photographer based in Miami. FIU Computer Science graduate passionate about technology and creativity.">
+    <meta name="keywords" content="Andres Rojas, Software Engineer, Photographer, Portfolio, Resume, Miami, FIU">
+    <meta name="author" content="Andres Rojas">
+
+    <!-- Google Fonts — Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- NAVIGATION                                  -->
+    <!-- ═══════════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">{</span>
+                <span class="logo-name">AR</span>
+                <span class="logo-bracket">}</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+                <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+                <li><a href="#blog" class="nav-link" data-section="blog">Blog</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HERO SECTION                                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <!-- Animated background orbs -->
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge animate-in" style="--delay: 0s">
+                <span class="badge-dot"></span>
+                Open to opportunities
+            </div>
+
+            <h1 class="hero-title animate-in" style="--delay: 0.1s">
+                Andres Rojas
+            </h1>
+
+            <p class="hero-subtitle animate-in" style="--delay: 0.2s">
+                <span class="subtitle-role">Software Engineer</span>
+                <span class="subtitle-separator">·</span>
+                <span class="subtitle-role">Photographer</span>
+                <span class="subtitle-separator">·</span>
+                <span class="subtitle-role">Creator</span>
+            </p>
+
+            <p class="hero-description animate-in" style="--delay: 0.3s">
+                Building clean code and capturing moments that tell stories.<br>
+                Miami-raised. FIU Computer Science.
+            </p>
+
+            <div class="hero-ctas animate-in" style="--delay: 0.4s">
+                <a href="resume.pdf" download class="btn btn-primary" id="download-resume-hero">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Resume
+                </a>
+                <a href="#gallery" class="btn btn-secondary" id="view-work-hero">
+                    View My Work
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="hero-socials animate-in" style="--delay: 0.5s">
+                <a href="https://www.linkedin.com/in/arojas97/" target="_blank" rel="noopener noreferrer" class="social-link" id="linkedin-hero" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Herolies" target="_blank" rel="noopener noreferrer" class="social-link" id="github-hero" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator animate-in" style="--delay: 0.7s">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- ABOUT SECTION                               -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-label">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left Column: Avatar + Quick Facts -->
+                <div class="about-left" data-reveal>
+                    <div class="about-avatar">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-placeholder">
+                            <span class="avatar-initials">AR</span>
+                        </div>
+                    </div>
+
+                    <div class="about-facts">
+                        <div class="fact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Miami, FL</span>
+                        </div>
+                        <div class="fact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 10 3 12 0v-5"></path>
+                            </svg>
+                            <span>FIU Computer Science</span>
+                        </div>
+                        <div class="fact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                            <span>English & Spanish</span>
+                        </div>
+                        <div class="fact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                            <span>Open to Opportunities</span>
+                        </div>
+                    </div>
+
+                    <div class="about-socials">
+                        <a href="https://www.linkedin.com/in/arojas97/" target="_blank" rel="noopener noreferrer" class="social-link" id="linkedin-about" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Herolies" target="_blank" rel="noopener noreferrer" class="social-link" id="github-about" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Bio + Skills -->
+                <div class="about-right" data-reveal>
+                    <div class="about-bio">
+                        <p>
+                            Hi, I'm Andres, Miami-raised, FIU Computer Science grad, and someone who genuinely loves the intersection of technology and creativity. I picked up photography in August 2024 and haven't put the camera down since. There's something about framing a shot that feels a lot like debugging, you keep adjusting until it just clicks.
+                        </p>
+                        <p>
+                            By day I'm a Shift Lead at Best Buy, where I lead teams, track metrics, and make sure everything runs smoothly. Before that I worked as a Data Analyst at Appen and even helped build ShellHacks, the largest hackathon in Florida, as part of Upsilon Pi Epsilon's tech committee.
+                        </p>
+                        <p>
+                            When I'm not shooting or coding, I'm deep in a game, watching films, or picking apart whatever new tech just dropped. English and Spanish, always.
+                        </p>
+                    </div>
+
+                    <div class="about-skills">
+                        <h3 class="skills-label">What I work with</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">Photography</span>
+                            <span class="skill-tag">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- RESUME SECTION                              -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section section-alt" id="resume">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-label">My background</span>
+                <h2 class="section-title">Resume</h2>
+                <p class="section-description">A snapshot of my education, skills, and projects. Download the full PDF for details.</p>
+            </div>
+
+            <div class="resume-cards" data-reveal>
+                <!-- Education Card -->
+                <div class="resume-card">
+                    <div class="resume-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 10 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="resume-card-title">Education</h3>
+                    <p class="resume-card-text">Bachelor of Science in Computer Science from Florida International University (FIU), Miami.</p>
+                    <div class="resume-card-accent"></div>
+                </div>
+
+                <!-- Skills Card -->
+                <div class="resume-card">
+                    <div class="resume-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="resume-card-title">Skills</h3>
+                    <p class="resume-card-text">Proficient in Python, JavaScript, SQL, and modern web technologies. Strong data analysis and team leadership background.</p>
+                    <div class="resume-card-accent"></div>
+                </div>
+
+                <!-- Projects Card -->
+                <div class="resume-card">
+                    <div class="resume-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="resume-card-title">Projects</h3>
+                    <p class="resume-card-text">ShellHacks hackathon platform, data analysis pipelines, and creative photography projects bridging tech and art.</p>
+                    <div class="resume-card-accent"></div>
+                </div>
+            </div>
+
+            <div class="resume-download" data-reveal>
+                <a href="resume.pdf" download class="btn btn-primary btn-lg" id="download-resume-section">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Full Resume (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- GALLERY SECTION                             -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section" id="gallery">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-label">Through my lens</span>
+                <h2 class="section-title">Photography</h2>
+                <p class="section-description">A curated selection of moments I've captured since picking up the camera in 2024.</p>
+            </div>
+
+            <div class="gallery-grid" data-reveal>
+                <div class="gallery-item gallery-item-tall" data-index="0">
+                    <img src="images/photo-1.jpg" alt="Dog looking at the distance" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Pets</span>
+                        <h3 class="gallery-caption">Chumps</h3>
+                        <div class="gallery-zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-index="1">
+                    <img src="images/photo-2.jpg" alt="White cat looking at the light" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Pets</span>
+                        <h3 class="gallery-caption">Gringo</h3>
+                        <div class="gallery-zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-index="2">
+                    <img src="images/photo-3.jpg" alt="Fish swimming around" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">WildLife</span>
+                        <h3 class="gallery-caption">Fish</h3>
+                        <div class="gallery-zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-index="3">
+                    <img src="images/photo-4.jpg" alt="Cars on the wall of the building" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Buildings</span>
+                        <h3 class="gallery-caption">Cars on the wall</h3>
+                        <div class="gallery-zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item gallery-item-wide" data-index="4">
+                    <img src="images/photo-5.jpg" alt="Road in the middle with tress around it" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">landscape</span>
+                        <h3 class="gallery-caption">Peaceful walkway</h3>
+                        <div class="gallery-zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-index="5">
+                    <img src="images/photo-6.jpg" alt="Supra in the middle of the night" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Cars</span>
+                        <h3 class="gallery-caption">Supra</h3>
+                        <div class="gallery-zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous photo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightbox-img" src="" alt="">
+            <div class="lightbox-info">
+                <span class="lightbox-category" id="lightbox-category"></span>
+                <h3 class="lightbox-caption" id="lightbox-caption"></h3>
+                <span class="lightbox-counter" id="lightbox-counter"></span>
+            </div>
+        </div>
+
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next photo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- BLOG SECTION                                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section section-alt" id="blog">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-label">Thoughts & Insights</span>
+                <h2 class="section-title">Blog</h2>
+                <p class="section-description">Writing about tech, photography, and everything in between.</p>
+            </div>
+
+            <div class="blog-grid" data-reveal>
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-card-thumb">
+                        <div class="blog-thumb-placeholder" style="--grad-from: #6C63FF; --grad-to: #63b3ff;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <time class="blog-date">Dec 15, 2024</time>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <h3 class="blog-card-title">From Debugging Code to Framing Shots: Why Photography Feels Like Programming</h3>
+                        <p class="blog-card-excerpt">How the problem-solving mindset I developed as a CS student translates directly into composing better photographs.</p>
+                        <a href="#" class="blog-read-more" id="blog-post-1">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-card-thumb">
+                        <div class="blog-thumb-placeholder" style="--grad-from: #a863ff; --grad-to: #6C63FF;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                                <circle cx="12" cy="13" r="3"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <time class="blog-date">Nov 3, 2024</time>
+                            <span class="blog-read-time">4 min read</span>
+                        </div>
+                        <h3 class="blog-card-title">Building ShellHacks: Lessons from Florida's Largest Hackathon</h3>
+                        <p class="blog-card-excerpt">What I learned about teamwork, tight deadlines, and building something meaningful during my time on the UPE tech committee.</p>
+                        <a href="#" class="blog-read-more" id="blog-post-2">
+                            Read More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Coming Soon Card -->
+                <article class="blog-card blog-card-soon">
+                    <div class="blog-soon-content">
+                        <div class="blog-soon-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                <path d="M2 2l7.586 7.586"></path>
+                                <circle cx="11" cy="11" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="blog-soon-title">More Coming Soon</h3>
+                        <p class="blog-soon-text">New posts about tech, photography, and creative projects are on the way. Stay tuned.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CONTACT SECTION                             -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-label">Let's Connect</span>
+                <h2 class="section-title">Contact</h2>
+                <p class="section-description">Have a question or want to work together? Feel free to reach out.</p>
+            </div>
+
+            <div class="contact-wrapper" data-reveal>
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                        <span class="form-error-msg">Please enter your name.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                        <span class="form-error-msg">Please enter a valid email address.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control form-textarea" placeholder="Your message here..." required></textarea>
+                        <span class="form-error-msg">Please enter a message.</span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                        <span>Send Message</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+
+                    <div class="form-success-msg" id="form-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        Message sent successfully! I'll get back to you soon.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER                                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">{</span>
+                    <span class="logo-name">AR</span>
+                    <span class="logo-bracket">}</span>
+                </a>
+
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/arojas97/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Herolies" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">&copy; 2024 Andres Rojas. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
